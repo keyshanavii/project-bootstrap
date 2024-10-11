@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <style>
+        .avatar{
+        display: flex;
+        align-items: end;
+      }
+
+      .avatar img{
+        width: 30px;
+        height: 30px;
+        border: solid 1px;
+        border-radius: 50%;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">LOGO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="avatar">
+                <img src="toni chopper.jpeg">
+              </div>
+            </div>
+        </nav>
+    
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-4">
+                <div class="card">
+                    <h5 class="card-header">Sided Menu</h5>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="karyawan" checked>
+                              <label class="form-check-label" for="karyawan">Karyawan</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="roles">
+                              <label class="form-check-label" for="roles">Roles</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="jabatan">
+                                <label class="form-check-label" for="jabatan">Jabatan</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="jadwal">
+                                <label class="form-check-label" for="jadwal">Jadwal</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="penggajian">
+                                <label class="form-check-label" for="penggajian">Penggajian</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="perpajakan">
+                                <label class="form-check-label" for="perpajakan">Perpajakan</label>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Settings">
+                              <label class="form-check-label" for="Settings">Settings</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="card">
+                    <h5 class="card-header" style="background-color: aqua;">Tambah Karyawan</h5>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="namakaryawan" class="form-label">Nama Karyawan</label>
+                            <input type="email" class="form-control" id="namakaryawan" placeholder="masukkan nama karyawan">
+                        </div>
+                        <div class="mb-3">
+                            <label for="alamatkaryawan" class="form-label">Alamat Karyawan</label>
+                            <input type="email" class="form-control" id="alamatkaryawan" placeholder="masukkan alamat karyawan">
+                        </div>
+                        <div class="mb-3">
+                            <label for="jeniskelamin" class="form-label">Jenis Kelamin</label>
+                            <select class="form-select" aria-label="Default select example" id="jeniskelamin">
+                                <option selected>Pilih Jenis Kelamin</option>
+                                <option value="1">Perempuan</option>
+                                <option value="2">Laki-Laki</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="agama" class="form-label">Agama</label>
+                            <select class="form-select" aria-label="Default select example" id="agama">
+                                <option selected>Pilih Agama</option>
+                                <option value="1">Islam</option>
+                                <option value="2">Kristen</option>
+                                <option value="3">Katholik</option>
+                                <option value="4">Hindu</option>
+                                <option value="5">Budha</option>
+                                <option value="6">Konghucu</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nomoridentitas" class="form-label">Nomor identitas</label>
+                            <input type="email" class="form-control" id="nomoridentitas" placeholder="masukkan nomor identitas">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nomortelepon" class="form-label">Nomor Telepon</label>
+                            <input type="email" class="form-control" id="nomortelepon" placeholder="masukkan nomor telepon">
+                        </div>
+                        <div class="mb-3">
+                            <label for="NPWP" class="form-label">NPWP</label>
+                            <input type="email" class="form-control" id="NPWP" placeholder="masukkan NPWP">
+                        </div>
+                        <div class="mb-3">
+                            <label for="norek" class="form-label">Nomor Rekening</label>
+                            <input type="email" class="form-control" id="norek" placeholder="masukkan nomor rekening">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namabank" class="form-label">Nama Bank</label>
+                            <input type="email" class="form-control" id="namabank" placeholder="masukkan nama bank">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namacabang" class="form-label">Nama Cabang</label>
+                            <input type="email" class="form-control" id="namacabang" placeholder="masukkan nama cabang">
+                        </div>
+                        <div class="mb-3">
+                            <label for="namapemilikrek" class="form-label">Nama Pemilik Rekening</label>
+                            <input type="email" class="form-control" id="namapemilikrek" placeholder="masukkan nama pemilik rekening">
+                        </div>
+                        <button type="button" class="btn btn-info">Simpan</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
